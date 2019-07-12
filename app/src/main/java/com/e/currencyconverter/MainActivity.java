@@ -10,11 +10,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView amountdollars;
-    private EditText enteramountshillings;
-    private Button converttodollars;
-    private Button converttoshillings;
-    private Button convert_e_shillings;
+    private TextView screen;
+    private EditText enteramount;
+    private Button convertshillingtodollar;
+    private Button convertdollartoshilling;
+    private Button converteurotoshilling;
+    private Button convertshillingtoeuro;
+    private Button convertdollartoeuro;
+    private Button converteurotodollar;
 
 
     @Override
@@ -28,28 +31,28 @@ public class MainActivity extends AppCompatActivity {
 
     public void dollarsMethod(View view) {
 
-        TextView amountdollars = (TextView) findViewById(R.id.tv_screen_id);
-        EditText entermountshillings = (EditText) findViewById(R.id.et_enter_amount);
+        TextView screen = (TextView) findViewById(R.id.tv_screen_id);
+        EditText entermount = (EditText) findViewById(R.id.et_enter_amount);
 
-        Double shillingsamount = Double.parseDouble(entermountshillings.getText().toString());
+        Double shillingsamount = Double.parseDouble(entermount.getText().toString());
 
         Double dollarsamount = shillingsamount / 112;
 
-        amountdollars.setText(shillingsamount / 112 + "");
+        screen.setText(dollarsamount  + "");
 
     }
 
 
     public void shillingsMethod(View view) {
 
-        TextView amountdollars = (TextView) findViewById(R.id.tv_screen_id);
-        EditText entermountshillings = (EditText) findViewById(R.id.et_enter_amount);
+        TextView screen = (TextView) findViewById(R.id.tv_screen_id);
+        EditText enteramount = (EditText) findViewById(R.id.et_enter_amount);
 
-        Double shillingsamount = Double.parseDouble(entermountshillings.getText().toString());
+        Double dollar = Double.parseDouble(enteramount.getText().toString());
 
-        Double dollarsamount = shillingsamount * 112;
+        Double shilling = dollar * 112;
 
-        amountdollars.setText(shillingsamount * 112 + "");
+        screen.setText(shilling +"");
 
 
     }
@@ -57,14 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void euroMethod(View view) {
 
-        TextView amountdollars = (TextView) findViewById(R.id.tv_screen_id);
-        EditText entermountshillings = (EditText) findViewById(R.id.et_enter_amount);
+        TextView screen = (TextView) findViewById(R.id.tv_screen_id);
+        EditText enteramount = (EditText) findViewById(R.id.et_enter_amount);
 
-        Double shillingsamount = Double.parseDouble(entermountshillings.getText().toString());
+        Double shillingsamount = Double.parseDouble(enteramount.getText().toString());
 
         Double euroamount = shillingsamount * 115;
 
-        amountdollars.setText(shillingsamount * 115 + "");
+        screen.setText(euroamount * 115 + "");
 
 
     }
@@ -72,14 +75,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void shMethod(View view) {
 
-        TextView amountdollars = (TextView) findViewById(R.id.tv_screen_id);
-        EditText entermountshillings = (EditText) findViewById(R.id.et_enter_amount);
+        TextView screen = (TextView) findViewById(R.id.tv_screen_id);
+        EditText enteramount = (EditText) findViewById(R.id.et_enter_amount);
 
-        Double shillingsamount = Double.parseDouble(entermountshillings.getText().toString());
+        Double shillingamount = Double.parseDouble(enteramount.getText().toString());
 
-        Double euroamount = shillingsamount / 115;
+        Double euroamount = shillingamount / 115;
 
-        amountdollars.setText(shillingsamount / 115 + "");
+        screen.setText(euroamount / 115 + "");
 
 
     }
@@ -87,14 +90,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void eurotodollarMethod(View view) {
 
-        TextView amountdollars = (TextView) findViewById(R.id.tv_screen_id);
-        EditText entermountshillings = (EditText) findViewById(R.id.et_enter_amount);
+        TextView screen = (TextView) findViewById(R.id.tv_screen_id);
+        EditText enteramount = (EditText) findViewById(R.id.et_enter_amount);
+        Double shillingamount = Double.parseDouble(enteramount.getText().toString());
 
-        Double shillingsamount = Double.parseDouble(entermountshillings.getText().toString());
+        Double euroamount = shillingamount / 1.1268;
 
-        Double euroamount = shillingsamount / 1.1268;
-
-        amountdollars.setText(shillingsamount / 1.1268 + "");
+        screen.setText(euroamount / 1.1268 + "");
 
 
     }
@@ -102,14 +104,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void dollartoeuroMethod(View view) {
 
-        TextView amountdollars = (TextView) findViewById(R.id.tv_screen_id);
-        EditText entermountshillings = (EditText) findViewById(R.id.et_enter_amount);
+        TextView screen = (TextView) findViewById(R.id.tv_screen_id);
+        EditText enteramount = (EditText) findViewById(R.id.et_enter_amount);
 
-        Double shillingsamount = Double.parseDouble(entermountshillings.getText().toString());
+        Double shillingsamount = Double.parseDouble(enteramount.getText().toString());
 
         Double euroamount = shillingsamount * 1.1268;
 
-        amountdollars.setText(shillingsamount * 1.1268 + "");
+        screen.setText(euroamount * 1.1268 + "");
 
 
     }
