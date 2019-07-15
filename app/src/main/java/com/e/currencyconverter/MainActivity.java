@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         Double shilling = dollar * 112;
 
-        screen.setText(shilling +"");
+        screen.setText(shilling  +"");
 
 
     }
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         Double euroamount = shillingsamount * 115;
 
-        screen.setText(euroamount * 115 + "");
+        screen.setText(euroamount  + "");
 
 
     }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         Double euroamount = shillingamount / 115;
 
-        screen.setText(euroamount / 115 + "");
+        screen.setText(euroamount  + "");
 
 
     }
@@ -94,9 +94,9 @@ public class MainActivity extends AppCompatActivity {
         EditText enteramount = (EditText) findViewById(R.id.et_enter_amount);
         Double shillingamount = Double.parseDouble(enteramount.getText().toString());
 
-        Double euroamount = shillingamount / 1.1268;
+        Double euroamount = shillingamount * 1.1268;
 
-        screen.setText(euroamount / 1.1268 + "");
+        screen.setText(euroamount  + "");
 
 
     }
@@ -109,9 +109,9 @@ public class MainActivity extends AppCompatActivity {
 
         Double shillingsamount = Double.parseDouble(enteramount.getText().toString());
 
-        Double euroamount = shillingsamount * 1.1268;
+        Double euroamount = shillingsamount / 1.1268;
 
-        screen.setText(euroamount * 1.1268 + "");
+        screen.setText(euroamount  + "");
 
 
     }

@@ -72,7 +72,8 @@
         android:onClick="euroMethod"
         android:layout_marginLeft="50dp"
         android:layout_below="@id/bt_dollar_id"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:background="@drawable/euro_shilling_border"/>
 
 
 
@@ -85,7 +86,8 @@
         android:onClick="shMethod"
         android:layout_marginLeft="180dp"
         android:layout_below="@id/bt_shillings_id"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shilling_euro_border"/>
 
 
 
@@ -98,7 +100,8 @@
         android:onClick="dollartoeuroMethod"
         android:layout_marginLeft="50dp"
         android:layout_below="@id/bt_euro_id"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dollar_euro_border"/>
 
 
 
@@ -111,7 +114,8 @@
         android:onClick="eurotodollarMethod"
         android:layout_marginLeft="180dp"
         android:layout_below="@id/bt_euro_id"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:background="@drawable/euro_dollar_border"/>
 
 
 
