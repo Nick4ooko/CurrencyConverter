@@ -36,7 +36,7 @@
         android:background="@drawable/enter_amount_border"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:paddingTop="6dp"
+        android:paddingTop="7dp"
         android:paddingBottom="6dp"/>
 
     <Button
